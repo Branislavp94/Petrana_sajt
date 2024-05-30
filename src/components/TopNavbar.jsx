@@ -26,7 +26,17 @@ const Navigation = () => {
                     <div className={`${styles.icon} ${isOpen ? styles.open : ''}`}></div>
                 </div>
             </nav>
-            <div className={`${styles.mobileBackdrop} ${isOpen ? styles.open : ''}`} onClick={toggleMenu}></div>
+            <div className={`${styles.mobileBackdrop} ${isOpen ? styles.open : ''}`} onClick={toggleMenu}>
+                {isOpen && (
+                    <div className={styles.mobileMenu}>
+                        <ul className={styles.mobileMenuList}>
+                            <li className={styles.menuItem}><a href="/">Home</a></li>
+                            <li className={styles.menuItem}><a href="/about">About</a></li>
+                            <li className={styles.menuItem}><a href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                )}
+            </div>
         </>
     );
 };

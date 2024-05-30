@@ -1,16 +1,20 @@
-// src/components/TopNavbar.js
+// src/components/Navigation.js
 import React from 'react';
-import { Link } from 'react-router-dom';
+import styles from '../style/Navigation.module.scss';
 
 const TopNavbar = () => {
-  return (
-    <nav>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-      </ul>
-    </nav>
-  );
+    return (
+        <nav className={styles.nav}>
+            <div className={styles.logo}>
+              Petranaaaaaaa photography :D
+            </div>
+            <ul className={styles.menu}>
+                <li className={styles.menuItem}><a href="/">Home</a></li>
+                <li className={styles.menuItem}><a href="/about">About</a></li>
+                <li className={styles.menuItem}><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    );
 };
 
 export default TopNavbar;

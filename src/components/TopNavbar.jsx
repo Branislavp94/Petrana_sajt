@@ -13,7 +13,7 @@ const Navigation = () => {
         <>
             <nav className={styles.nav}>
                 <div className={styles.logo}>
-                    Petranaaaaaaa photography :D
+                     photography :D
                 </div>
                 <ul className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
                     <li className={styles.menuItem}><a href="/">Home</a></li>

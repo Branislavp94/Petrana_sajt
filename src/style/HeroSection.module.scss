@@ -24,12 +24,10 @@
   z-index: 0; /* Ensure the old image is below the new one */
 }
 
-
 .visible {
   opacity: 1;
-}a
-
-.fadeIn {
+}
+a .fadeIn {
   opacity: 1;
 }
 
@@ -68,7 +66,7 @@
   padding: 10px 20px;
   font-size: 1rem;
   color: white;
-  background-color: #007BFF;
+  background-color: #007bff;
   border: none;
   border-radius: 5px;
   cursor: pointer;

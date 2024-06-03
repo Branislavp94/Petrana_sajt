@@ -1,7 +1,7 @@
 // src/components/Navigation.js
 import React, { useState } from 'react';
 import styles from '../style/Navigation.module.scss';
-import Logo from './Logo';
+import Logo from '../slike/logo_test.jpeg';
 
 const Navigation = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +17,7 @@ const Navigation = () => {
                     <li className={styles.menuItem}><a href="/">Pocetna</a></li>
                     <li className={styles.menuItem}><a href="/about">O meni</a></li>
             </ul>
-            <Logo />
+            <div className={styles.nav_logo}><img src={Logo} width={350} height={350} alt="logo" /></div>
                 <ul className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
                     <li className={styles.menuItem}><a href="/about">Portfolio</a></li>
                     <li className={styles.menuItem}><a href="/contact">Kontakt</a></li>

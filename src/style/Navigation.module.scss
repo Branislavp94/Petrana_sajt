@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 80px;
   background: transparent;
   padding: 0 100px;
   text-transform: uppercase;
@@ -20,7 +20,7 @@
   padding: 0;
   margin: 0;
   display: flex;
-  @media (max-width: 768px) {
+  @media (max-width: 910px) {
       display: none;
   }
   
@@ -106,11 +106,15 @@
   font-family: Avenir-Roman, sans-serif;
 }
 
+.nav_logo {
+  margin-bottom: 35px;
+}
+
 .mobileMenu .menuItem a:hover {
   color: #666;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 910px) {
   .menu {
       display: none;
   }
@@ -126,5 +130,14 @@
     
     .mobileBackdrop {
       display: block;
+  }
+
+  .nav_logo{
+    margin-left: -150px;
+    img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+    }
   }
 }

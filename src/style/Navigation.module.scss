@@ -3,9 +3,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 60px;
+  background: transparent;
+  padding: 0 100px;
+  text-transform: uppercase;
+  
 }
 
 .logo {
@@ -21,15 +23,27 @@
   @media (max-width: 768px) {
       display: none;
   }
+  
 }
 
 .menuItem {
   margin-right: 20px;
+  margin-top: 20px;
 }
 
 .menuItem a {
+  color: #B48647;
+  font-family: Avenir-Roman, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
   text-decoration: none;
-  color: #333;
+
+  &:hover {
+    border-bottom: 1px solid #B48647;
+  }
 }
 
 .mobileMenuIcon {
@@ -40,7 +54,7 @@
 .icon {
   width: 30px;
   height: 3px;
-  background-color: #333;
+  background-color:#B48647;
   margin: 6px 0;
   transition: transform 0.3s ease;
 }
@@ -83,17 +97,13 @@
 
 .mobileMenu .menuItem a {
   text-decoration: none;
-  color: #333;
   font-size: 20px;
   display: block;
   padding: 10px 20px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-}
-
-.mobileMenu .menuItem a:hover {
-  background-color: #f0f0f0;
-  color: #666;
+  color: #B48647;
+  font-family: Avenir-Roman, sans-serif;
 }
 
 .mobileMenu .menuItem a:hover {
@@ -111,9 +121,10 @@
 
   .mobileMenuIcon {
       display: block;
-  }
-
-  .mobileBackdrop {
+      margin-top: 20px;
+    }
+    
+    .mobileBackdrop {
       display: block;
   }
 }

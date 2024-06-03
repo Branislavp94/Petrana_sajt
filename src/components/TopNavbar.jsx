@@ -1,6 +1,7 @@
 // src/components/Navigation.js
 import React, { useState } from 'react';
 import styles from '../style/Navigation.module.scss';
+import Logo from './Logo';
 
 const Navigation = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,13 +13,14 @@ const Navigation = () => {
     return (
         <>
             <nav className={styles.nav}>
-                <div className={styles.logo}>
-                     photography :D
-                </div>
+            <ul className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
+                    <li className={styles.menuItem}><a href="/">Pocetna</a></li>
+                    <li className={styles.menuItem}><a href="/about">O meni</a></li>
+            </ul>
+            <Logo />
                 <ul className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
-                    <li className={styles.menuItem}><a href="/">Home</a></li>
-                    <li className={styles.menuItem}><a href="/about">About</a></li>
-                    <li className={styles.menuItem}><a href="/contact">Contact</a></li>
+                    <li className={styles.menuItem}><a href="/about">Portfolio</a></li>
+                    <li className={styles.menuItem}><a href="/contact">Kontakt</a></li>
                 </ul>
                 <div className={styles.mobileMenuIcon} onClick={toggleMenu}>
                     <div className={`${styles.icon} ${isOpen ? styles.open : ''}`}></div>
@@ -30,9 +32,10 @@ const Navigation = () => {
                 {isOpen && (
                     <div className={styles.mobileMenu}>
                         <ul className={styles.mobileMenuList}>
-                            <li className={styles.menuItem}><a href="/">Home</a></li>
-                            <li className={styles.menuItem}><a href="/about">About</a></li>
-                            <li className={styles.menuItem}><a href="/contact">Contact</a></li>
+                            <li className={styles.menuItem}><a href="/">Pocetna</a></li>
+                            <li className={styles.menuItem}><a href="/about">O meni</a></li>
+                            <li className={styles.menuItem}><a href="/contact">Portfolio</a></li>
+                            <li className={styles.menuItem}><a href="/contact">Kontakt</a></li>
                         </ul>
                     </div>
                 )}

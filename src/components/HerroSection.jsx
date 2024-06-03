@@ -40,9 +40,7 @@ const HeroSection = () => {
       ))}
       <div className={styles.overlay}></div>
       <div className={styles.content}>
-        <h1 className={styles.title}>Welcome to our website</h1>
-        <p className={styles.subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-        <button className={styles.button}>Learn More</button>
+        <p className={styles.subtitle}>Uđite u svet gde se svaki trenutak pretvara u umetnost, a svaki kadar nosi seo srca fotografa.</p>
         <div className={styles.indicators}>
           {images.map((_, index) => (
             <div

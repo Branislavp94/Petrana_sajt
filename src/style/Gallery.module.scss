@@ -1,0 +1,53 @@
+:root {
+  --black: #000;
+  --orange: #b48647;
+  --white: #fff;
+  --gray-dark: #343a40;
+  --dark: #252525;
+
+  --padding: 50px 0;
+  --transition: 0.5s;
+}
+
+.gallery {
+  padding: var(--padding);
+  text-align: center;
+
+  h2{
+    font-size: 40px;
+    color: var(--orange);
+    font-weight: 600;
+  }
+
+  hr{
+    width: 170px;
+    height: 3px;
+    border: none;
+    background-color: var(--orange);
+    margin: 15px auto;
+  }
+
+  .gallery_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  .gallery_images figure {
+   flex: 0 0 32%;
+   margin-bottom: 20px;
+  }
+
+  img{
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.container1 {
+  max-width: 80%;
+  margin: auto;
+}
+
+

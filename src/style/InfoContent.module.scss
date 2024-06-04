@@ -1,0 +1,45 @@
+:root {
+  --black: #000;
+  --orange: #b48647;
+  --white: #fff;
+  --gray-dark: #343a40;
+  --dark: #252525;
+
+  --padding: 50px 0;
+  --transition: 0.5s;
+}
+
+
+.info {
+  padding: 100px 0;
+  text-align: center;
+
+  hr{
+    width: 170px;
+    height: 3px;
+    border: none;
+    background-color: var(--orange);
+    margin: 15px 0;
+  }
+}
+
+.info h2 {
+  font-size: 40px;
+  color: var(--orange);
+  font-weight: 600;
+}
+
+.info h2 + p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.info p + hr {
+  margin-left: auto;
+}
+
+.container1 {
+  max-width: 80%;
+  margin: auto;
+}

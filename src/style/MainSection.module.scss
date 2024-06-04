@@ -53,9 +53,13 @@
   figure {
     flex: 0 0 50%;
     img {
-      object-fit: contain;
-      width: 100%;
+      object-fit: cover;
+      width: 60%;
       height: 800px;
+      margin-left: 240px;
+      border-radius: 20px;
+      object-position: top;
+      box-shadow: 9px 6px 61px -4px rgba(0, 0, 0, 0.75);
     }
   }
 }

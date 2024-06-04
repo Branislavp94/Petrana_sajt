@@ -19,7 +19,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.4;
+  opacity: 0;
   transition: opacity 0.5s ease-in-out; /* Match the duration in the JS timeout */
   z-index: 0; /* Ensure the old image is below the new one */
 }

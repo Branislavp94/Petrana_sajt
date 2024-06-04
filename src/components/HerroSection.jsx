@@ -5,7 +5,11 @@ import Image from "../slike/NASLOVNA.jpg";
 import Image2 from "../slike/9M0A5415-2.jpg";
 import Image1 from "../slike/5T3A5386.jpg";
 
-const images = [Image, Image2, Image1];
+const images = [
+  { src: Image, position: 'top' },
+  { src: Image2, position: 'center' },
+  { src: Image1, position: 'top' }
+];
 
 const HeroSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -28,12 +32,15 @@ const HeroSection = () => {
       {images.map((image, index) => (
         <img
           key={index}
-          src={image}
+          src={image.src}
           alt={`Background ${index}`}
           className={`${styles.image} ${
             currentImageIndex === index ? styles.visible : ""
           } ${fade ? styles.fadeIn : styles.fadeOut}`}
-          style={{ zIndex: currentImageIndex === index ? 1 : 0 }}
+          style={{
+            zIndex: currentImageIndex === index ? 1 : 0,
+            objectPosition: image.position
+          }}
         />
       ))}
       <div className={styles.overlay}></div>

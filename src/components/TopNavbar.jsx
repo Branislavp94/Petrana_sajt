@@ -29,13 +29,13 @@ const Navigation = () => {
             <span className={styles.dropdownToggle}>Portfolio</span>
             <ul className={styles.dropdownMenu}>
               <li>
-                <a href="/portfolio1">Stvaranje price i priroda</a>
+                <a href="/portfolio/stvaranje-price-i-priroda">Stvaranje price i priroda</a>
               </li>
               <li>
-                <a href="/portfolio2">Umetnost u fokusu</a>
+                <a href="/portfolio/umetnost-u-fokusu">Umetnost u fokusu</a>
               </li>
               <li>
-                <a href="/portfolio3">Rodjendani i krstenja</a>
+                <a href="/portfolio/krstenja-i-rodjendani">Rodjendani i krstenja</a>
               </li>
             </ul>
           </li>

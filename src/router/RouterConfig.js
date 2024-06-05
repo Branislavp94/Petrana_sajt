@@ -6,6 +6,10 @@ import AppLayout from '../layout/appLayout/index';
 const MainDashboard = lazy(() => import('../pages/dashboard/index'));
 const About = lazy(() => import('../components/About'));
 const Contact = lazy(() => import('../components/Contact'));
+const StvaranjePriceIPriroda = lazy(() => import('../pages/StvaranjePriceIPriroda'));
+const UmetnostUFokusu = lazy(() => import('../pages/UmetnostUFokusu'));
+const KrstenjaIRodjendani = lazy(() => import('../pages/KrstenjaIRodjendani'));
+
 
 const router = createBrowserRouter([
   {
@@ -22,6 +26,18 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/portfolio/stvaranje-price-i-priroda",
+        element: <StvaranjePriceIPriroda />,
+      },
+      {
+        path: "/portfolio/umetnost-u-fokusu",
+        element: <UmetnostUFokusu  />,
+      },
+      {
+        path: "/portfolio/krstenja-i-rodjendani",
+        element: <KrstenjaIRodjendani  />,
       },
     ],
   },

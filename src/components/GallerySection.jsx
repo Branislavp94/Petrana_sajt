@@ -1,6 +1,7 @@
 import React from 'react';
 
-import Image1 from "../slike/NASLOVNA.jpg";
+import Image1 from "../slike/9M0A2576.jpg";
+import Image4 from "../slike/9M0A2493.jpg";
 import Image2 from "../slike/9M0A5415-2.jpg";
 import Image3 from "../slike/5T3A5386.jpg";
 
@@ -9,15 +10,14 @@ import GalleryStyle from '../style/Gallery.module.scss';
 
 //  na height mozemo postavljati sami velicinu slike ili ce biti auto kolika je
 const images = [
-  { src: Image1, alt: "slika1", heigth: '' },
-  { src: Image2, alt: "slika2" },
-  { src: Image3, alt: "slika3" },
-  { src: Image1, alt: "slika4" },
-  { src: Image2, alt: "slika5" },
-  { src: Image3, alt: "slika6" },
-  { src: Image1, alt: "slika7" },
-  { src: Image2, alt: "slika8" },
-  { src: Image3, alt: "slika9" },
+  { src: Image1, alt: "slika1", heigth: '321px', width: '461px', objectPosition: '' },
+  { src: Image2, alt: "slika2", heigth: '321px', width: '205px', objectPosition: '' },
+  { src: Image4, alt: "slika1", heigth: '321px', width: '461px', objectPosition: '' },
+  { src: Image3, alt: "slika3", heigth: '321px', width: '205px', objectPosition: '' },
+  { src: Image1, alt: "slika4", heigth: '321px', width: '205px', objectPosition: '' },
+  { src: Image2, alt: "slika5", heigth: '321px', width: '461px', objectPosition: '' },
+  { src: Image3, alt: "slika6", heigth: '321px', width: '205px', objectPosition: '' },
+  { src: Image1, alt: "slika7", heigth: '321px', width: '461px', objectPosition: '' },
 ];
 
 const GallerySection = () => {
@@ -36,7 +36,7 @@ const GallerySection = () => {
       <div className={GalleryStyle.gallery_images}>
         {images.map((image, index) => (
           <figure key={index}>
-            <img src={image.src} alt={image.alt} style={{ width: '100%', height: image.heigth || 'auto' }} />
+            <img src={image.src} alt={image.alt} style={{ width: image.width, height: image.heigth || 'auto', objectPosition: image.objectPosition }} />
           </figure>
         ))}
       </div>

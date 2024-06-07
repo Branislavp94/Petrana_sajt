@@ -6,17 +6,18 @@ const ExtraContent = () => {
   return (
     <section class={`${InfoStyle.info} ${InfoStyle.container1}`}>
     <hr />
-    <h2>Neki Tvoj tekst</h2>
+    <h2>UMETNOST LJUBAVI</h2>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-      doloremque ad rem asperiores, non nobis. Rem molestiae hic delectus ea?
+    Koristim svoj jedinstveni pristup kako bi svaki kadar bio više od obične slike - to je uspomena, 
+    emocija, i ljubav. Neka vaši trenuci budu zabeleženi na poseban način kroz umetnički izražaj 
+    koji odiše autentičnošću i strasti.
     </p>
     <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum nulla
-      blanditiis beatae asperiores et autem ea quis eligendi, sunt rem alias
-      reiciendis vero illum odit hic! Nesciunt excepturi esse fuga,
-      repudiandae corporis nemo repellendus porro impedit deleniti quibusdam,
-      odio et.
+    U ovoj galeriji, svaka fotografija je pažljivo odabrana kako bi prikazala raznovrsnost 
+    i lepotu trenutaka koje je sam uspela da uhvatim. 
+    Bilo da je reč o veselim porodičnim okupljanjima, 
+    nežnim trudničkim trenucima ili iskrenim osmesima u prirodi, 
+    svaki snimak je prozor u svet pun emocija.
     </p>
     <hr />
   </section>

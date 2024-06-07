@@ -3,12 +3,13 @@ import styles from "../style/HeroSection.module.scss";
 
 import Image from "../slike/NASLOVNA.jpg";
 import Image2 from "../slike/9M0A5415-2.jpg";
-import Image1 from "../slike/5T3A5386.jpg";
+import Image1 from "../slike/9M0A2597.jpg";
 
 const images = [
   { src: Image, position: 'top' },
   { src: Image2, position: 'center' },
   { src: Image1, position: 'top' }
+
 ];
 
 const HeroSection = () => {

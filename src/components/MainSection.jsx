@@ -9,16 +9,15 @@ const MainSection = () => {
         <h2>O meni</h2>
         <hr />
         <p>
-          Full cleaning and housekeeping services for companies and households.
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy
-          text.Lorem Ipsum is simply
+          ZDRAVO! JA SAM PETRANA, 
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. A reiciendis,
-          facere labore modi id natus cum veritatis sunt. Consequuntur, dolor.
+          SVE JE POČELO IZ LJUBAVI. VEĆ 12 GODINA STVARAM I IZRAŽAVAM SVOJU KREATIVNOST KROZ OBJEKTIV. 
+          KADA SAM PRVI PUT UZELA FOTOAPARAT U RUKE, SHVATILA SAM DA JE TO ZAPRAVO MOJE OKO ZA SAGLEDAVANJE 
+          STVARNOSTI. IZ LJUBAVI PREMA UMETNOSTI I LJUDIMA, TU SAM DA ZABELEŽIM VAŠE POSEBNE TRENUTKE I DA 
+          IH KROZ MOJE FOTOGRAFIJE UČINIM JOŠ POSEBNIJIM.
         </p>
-        <button class={MainSectionStyle.button}>Learn more</button>
+       <button class={MainSectionStyle.button}>Learn more</button>
       </div>
       <figure>
         <img src={Image1} alt="profilna slika" />

@@ -1,3 +1,7 @@
+// Import the mixin file
+@import './gerenalStyle/mixins';
+
+
 :root {
   --black: #000;
   --orange: #b48647;
@@ -14,14 +18,9 @@
   padding: var(--padding);
   display: flex;
   align-items: center;
-  background-color: #f7d9af;
   
   hr {
-    width: 100px;
-    height: 3px;
-    border: none;
-    background-color: var(--orange);
-    margin: 15px 0;
+      @include hr-style;
   }
   .about_text {
     flex: 0 0 50%;
@@ -29,28 +28,15 @@
     .text_section {
       display: flex;
       flex-direction: column;
-      gap: 50px;
       text-align: center;
     }
 
     h2 {
-      text-transform: uppercase;
-      font-size: 40px;
-      color: var(--orange);
-      font-weight: 600l;
-      text-align: center;
+      @include header-style; 
       margin-left: 50px;
     }
     p {
-      margin-bottom: 15px;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      letter-spacing: 0em;
-      line-height: 2.13em;
-      text-transform: none;
-      color: #6B5D4F;
+      @include paragraph-style;
     }
 
     .button {

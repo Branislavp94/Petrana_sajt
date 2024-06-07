@@ -1,3 +1,5 @@
+@import './gerenalStyle/mixins';
+
 :root {
   --black: #000;
   --orange: #b48647;
@@ -13,31 +15,23 @@
   text-align: center;
 
   hr {
-    width: 170px;
-    height: 3px;
-    border: none;
-    background-color: var(--orange);
-    margin: 15px 0;
+    @include hr-style($width: 0px);
   }
 }
 
 .info h2 {
-  font-size: 40px;
-  color: var(--orange);
-  font-weight: 600;
+  @include header-style;
 }
 
-.info h2 + p {
-  font-size: 18px;
-  font-weight: 500;
-  margin: 15px 0;
+.info p {
+  @include paragraph-style;
 }
+
 
 .info p + hr {
   margin-left: auto;
 }
 
 .container1 {
-  max-width: 80%;
-  margin: auto;
+ @include container1-info-section-style($width: 80%);
 }

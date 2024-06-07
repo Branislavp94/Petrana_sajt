@@ -7,14 +7,15 @@ const MainSection = () => {
     <section class={`${MainSectionStyle.about} ${MainSectionStyle.container1}`}>
       <div class={MainSectionStyle.about_text}>
         <div className={MainSectionStyle.text_section}>
-        <h2>ZDRAVO! JA SAM  PETRANA,</h2>
+          <div>
+            <h2>ZDRAVO! JA SAM  PETRANA,</h2>
+            <hr />
+          </div>
         <p>
-          Full cleaning and housekeeping services for companies and households.
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy
-          text.Lorem Ipsum is simply. Lorem ipsum dolor sit amet consectetur adipisicing elit. A reiciendis,
-          facere labore modi id natus cum veritatis sunt. Consequuntur, dolor.. Lorem ipsum dolor sit amet consectetur adipisicing elit. A reiciendis,
-          facere labore modi id natus cum veritatis sunt. Consequuntur, dolor.
+          SVE JE POČELO IZ LJUBAVI. VEĆ 12 GODINA STVARAM I IZRAŽAVAM SVOJU KREATIVNOST KROZ OBJEKTIV. 
+          KADA SAM PRVI PUT UZELA FOTOAPARAT U RUKE, SHVATILA SAM DA JE TO ZAPRAVO MOJE OKO ZA SAGLEDAVANJE 
+          STVARNOSTI. IZ LJUBAVI PREMA UMETNOSTI I LJUDIMA, TU SAM DA ZABELEŽIM VAŠE POSEBNE TRENUTKE I DA 
+          IH KROZ MOJE FOTOGRAFIJE UČINIM JOŠ POSEBNIJIM.
         </p>
         </div>
       </div>

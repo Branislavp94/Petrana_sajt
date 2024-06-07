@@ -22,7 +22,7 @@ const Navigation = () => {
           </li>
         </ul>
         <div className={styles.nav_logo}>
-          <img src={Logo} width={350} height={350} alt="logo" />
+          <img src={Logo} alt="logo" />
         </div>
         <ul className={`${styles.menu} ${isOpen ? styles.open : ""}`}>
           <li className={styles.menuItemWithDropdown}>

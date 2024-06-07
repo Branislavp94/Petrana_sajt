@@ -18,6 +18,7 @@
   padding: var(--padding);
   display: flex;
   align-items: center;
+  gap: 50px;
   
   hr {
       @include hr-style;

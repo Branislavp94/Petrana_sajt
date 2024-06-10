@@ -9,9 +9,9 @@
  
 }
 
-@mixin paragraph-style {
+@mixin paragraph-style($text_size: 22px) {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 22px;
+  font-size: $text_size;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0em;

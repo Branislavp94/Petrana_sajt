@@ -66,11 +66,64 @@
       height: 600px;
       object-position: top;
     }
-  }
-
+  }  
 }
 
 .container1 {
   max-width: 90%;
   margin: auto;
+}
+
+.about_me_extra_section_images{
+  display: flex;
+  gap: 20px;
+  width:1550px;
+  justify-content: center;
+  margin: auto;
+  img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    object-position: bottom;
+  }
+}
+
+.about_me_extra_section_content{
+  margin-top: 5px;
+  height: 300px;
+  background-color: #FFFDF8;
+  width:1550px;
+
+  display: flex;
+  .about_me_extra_section_content_text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+      @include header-style
+    }
+  }
+
+  .about_me_extra_section_content_box{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .about_me_extra_section_content_box_container{
+      background-color: #F3F2EE;
+      width: 80%;
+      height: 500px;
+      padding: 50px;
+      margin-bottom: 400px;
+      overflow: hidden;
+      p{
+        @include paragraph-style($text_size: 15px);
+      }
+    }
+  }
 }

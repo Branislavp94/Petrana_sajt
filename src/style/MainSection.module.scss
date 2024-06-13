@@ -1,6 +1,5 @@
 // Import the mixin file
-@import './gerenalStyle/mixins';
-
+@import "./gerenalStyle/mixins";
 
 :root {
   --black: #000;
@@ -10,7 +9,6 @@
   --dark: #252525;
   --padding: 50px 0;
   --transition: 0.5s;
- 
 }
 // Aboute
 
@@ -19,9 +17,9 @@
   display: flex;
   align-items: center;
   gap: 50px;
-  
+
   hr {
-      @include hr-style;
+    @include hr-style;
   }
   .about_text {
     flex: 0 0 50%;
@@ -33,7 +31,7 @@
     }
 
     h2 {
-      @include header-style; 
+      @include header-style;
       margin-left: 50px;
     }
     p {
@@ -59,14 +57,14 @@
     margin: auto;
     padding: 70px;
     width: 700px;
-    background-color: #FFFDF8;
+    background-color: #fffdf8;
     img {
       object-fit: cover;
       width: 100%;
       height: 600px;
       object-position: top;
     }
-  }  
+  }
 }
 
 .container1 {
@@ -74,13 +72,13 @@
   margin: auto;
 }
 
-.about_me_extra_section_images{
+.about_me_extra_section_images {
   display: flex;
   gap: 20px;
-  width:1550px;
+  width: 1550px;
   justify-content: center;
   margin: auto;
-  img{
+  img {
     width: 100%;
     height: 700px;
     object-fit: cover;
@@ -88,40 +86,40 @@
   }
 }
 
-.about_me_extra_section_content{
+.about_me_extra_section_content {
   margin-top: 5px;
   height: 300px;
-  background-color: #FFFDF8;
-  width:1550px;
+  background-color: #fffdf8;
+  width: 1550px;
 
   display: flex;
-  .about_me_extra_section_content_text{
+  .about_me_extra_section_content_text {
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    h2{
-      @include header-style
+    h2 {
+      @include header-style;
     }
   }
 
-  .about_me_extra_section_content_box{
+  .about_me_extra_section_content_box {
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    .about_me_extra_section_content_box_container{
-      background-color: #F3F2EE;
+
+    .about_me_extra_section_content_box_container {
+      background-color: #f3f2ee;
       width: 80%;
       height: 500px;
       padding: 50px;
       margin-bottom: 400px;
       overflow: hidden;
-      p{
+      p {
         @include paragraph-style($text_size: 15px);
       }
     }

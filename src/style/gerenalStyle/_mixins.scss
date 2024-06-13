@@ -6,21 +6,19 @@
   --dark: #252525;
   --padding: 50px 0;
   --transition: 0.5s;
- 
 }
 
 @mixin paragraph-style($text_size: 22px) {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: $text_size;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0em;
   line-height: 2.13em;
   text-transform: lowercase;
-  color: #6B5D4F;
+  color: #6b5d4f;
   margin-top: 30px;
 }
-
 
 @mixin header-style {
   text-transform: uppercase;
@@ -30,7 +28,6 @@
   text-align: center;
 }
 
-
 @mixin hr-style($width: auto) {
   width: 170px;
   height: 3px;
@@ -39,13 +36,11 @@
   margin: 15px $width;
 }
 
-
 //  zeljko zna sta je ovo haha :D
 @mixin container1-style {
-  max-width: 100%;
+  max-width: 80%;
   margin: auto;
 }
-
 
 //  zeljko zna sta je ovo haha :D
 @mixin container1-info-section-style($width: 100%) {
